@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <Container>
       <SideBar />
-      <div>hi</div>
     </Container>
   );
 }
