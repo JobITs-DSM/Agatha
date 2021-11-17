@@ -1,7 +1,14 @@
 import { FC } from "react";
+import * as S from "./styles";
+import { useRouter } from "next/router";
+
 const Header:FC = ():JSX.Element => {
+    const router = useRouter();
+
     return (
-        <div>hi</div>
+        <S.Container>
+            
+        </S.Container>
     );
 }
 

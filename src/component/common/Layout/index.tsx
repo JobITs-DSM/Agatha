@@ -1,5 +1,7 @@
 import React, { FC } from "react";
-import SideBar from "../sidebar";
+import SideBar from "../Sidebar";
+import Header from "../Header";
+import * as S from "./styles";
 
 interface AppLayoutPage {
   children: React.ReactNode;
@@ -7,10 +9,11 @@ interface AppLayoutPage {
 
 const Layout: FC = ({ children }: AppLayoutPage) => {
   return (
-    <div>
+    <S.Container>
       <SideBar />
+      <Header />
       {children}
-    </div>
+    </S.Container>
   );
 };
 

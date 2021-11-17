@@ -1,8 +1,10 @@
-import SideBar from "../src/component/common/sidebar";
-export default function Home() {
+import { FC } from "react";
+
+const Home: FC = ():JSX.Element => {
   return (
     <>
-      <SideBar />
     </>
   );
 }
+
+export default Home;

@@ -3,7 +3,7 @@ import * as S from "./styles";
 import { useRouter } from "next/router";
 import { color } from "../../../../styles";
 
-const Header: FC = (): JSX.Element => {
+const SideBar: FC = (): JSX.Element => {
   const router = useRouter();
 
   return (
@@ -50,4 +50,4 @@ const Header: FC = (): JSX.Element => {
   );
 };
 
-export default Header;
+export default SideBar;
