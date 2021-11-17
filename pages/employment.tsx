@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SideBar from "../src/component/common/SideBar";
+import SideBar from "../src/component/common/sidebar";
 
 const Employment: FC = (): JSX.Element => {
   return (

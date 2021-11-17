@@ -43,7 +43,7 @@ export const MenuTabText = styled.div`
 
 export const MenuLinks = styled.div<{ background: string }>`
   width: 100%;
-  padding: 8px;
+  padding: 8px 6px;
   border-radius: 5px;
   background-color: ${(props) => props.background};
 `;
