@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import * as S from "./styles";
 import { useRouter } from "next/router";
 import { color } from "../../../styles";

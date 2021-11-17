@@ -42,7 +42,9 @@ export const MenuTabText = styled.div`
 `;
 
 export const MenuLinks = styled.div<{ background: string }>`
-  padding: 10px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
   background-color: ${(props) => props.background};
 `;
 
@@ -81,6 +83,5 @@ export const Team = styled.div`
 export const ExplanationBox = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 3px;
 `;
-
-export const Explanation = styled.div``;
