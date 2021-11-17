@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
-import { color } from "../../../styles";
+import { color } from "../../../../styles";
 
 export const SideBarContainer = styled.div`
   height: 100vh;
@@ -9,7 +9,7 @@ export const SideBarContainer = styled.div`
   color: ${color.gray100};
   display: flex;
   flex-direction: column;
-  padding: 3% 1%;
+  padding: 40px 10px;
   position: relative;
 `;
 

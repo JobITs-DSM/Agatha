@@ -1,7 +1,7 @@
 import { FC } from "react";
 import * as S from "./styles";
 import { useRouter } from "next/router";
-import { color } from "../../../styles";
+import { color } from "../../../../styles";
 
 const Header: FC = (): JSX.Element => {
   const router = useRouter();

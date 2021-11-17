@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SideBar from "../src/component/SideBar/SideBar";
+import SideBar from "../src/component/common/SideBar";
 
 const Enterprice: FC = (): JSX.Element => {
   return (

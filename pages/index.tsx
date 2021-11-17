@@ -1,9 +1,8 @@
-import SideBar from "../src/component/SideBar/SideBar";
-import { Container } from "../src/component/Common";
+import SideBar from "../src/component/common/SideBar";
 export default function Home() {
   return (
-    <Container>
+    <>
       <SideBar />
-    </Container>
+    </>
   );
 }
