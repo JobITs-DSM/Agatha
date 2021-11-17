@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import * as S from "./styles";
 import { useRouter } from "next/router";
 import { color } from "../../../styles";
@@ -6,6 +6,9 @@ import { color } from "../../../styles";
 const Header: FC = (): JSX.Element => {
   const router = useRouter();
 
+  useEffect(() => {
+    console.log(router.pathname)
+  }, []) 
   return (
     <S.SideBarContainer>
       <S.Introduction>
@@ -14,7 +17,7 @@ const Header: FC = (): JSX.Element => {
       </S.Introduction>
       <S.MenuTab>
         <S.MenuTabText>Menu Bar</S.MenuTabText>
-        <S.MenuLinks href="/recruitment" background={router.pathname === "/recruitment" ? `${color.blue200}` : "inherit"}>모집 의뢰서 관리</S.MenuLinks>
+        <S.MenuLinks href="/recruitment" background={router.pathname === "/recruitment" ? `${color.blue200}` : `${color.blue200}`}>모집 의뢰서 관리</S.MenuLinks>
         <S.MenuLinks href="/enterprise" background={router.pathname === "/enterprise" ? `${color.blue200}` : "inherit"}>기업 관리</S.MenuLinks>
         <S.MenuLinks href="/employment" background={router.pathname === "/employment" ? `${color.blue200}` : "inherit"}>취업 관리</S.MenuLinks>
       </S.MenuTab>
