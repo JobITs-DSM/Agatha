@@ -33,7 +33,7 @@ export const MenuTab = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 15%;
-  gap: 20px;
+  gap: 10px;
 `;
 
 export const MenuTabText = styled.div`
@@ -41,11 +41,15 @@ export const MenuTabText = styled.div`
   color: ${color.gray300};
 `;
 
-export const MenuLinks = styled(Link)<{background}>`
+export const MenuLinks = styled.div<{ background: string }>`
+  padding: 10px;
+  background-color: ${(props) => props.background};
+`;
+
+export const Links = styled(Link)`
   outline: none;
   text-decoration: none;
   font-size: 17px;
-  background-color: ${props => props.background};
 `;
 
 export const Footer = styled.div`
@@ -59,19 +63,19 @@ export const Footer = styled.div`
 `;
 
 export const ByTeam = styled.div`
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 `;
 
 export const Text = styled.div`
-    font-size: 15px;
-    color: ${color.gray300};
+  font-size: 15px;
+  color: ${color.gray300};
 `;
 
 export const Team = styled.div`
-    font-size: 15px;
-    color: ${color.gray200};
-    border-bottom: 1px solid ${color.gray200};
+  font-size: 15px;
+  color: ${color.gray200};
+  border-bottom: 1px solid ${color.gray200};
 `;
 
 export const ExplanationBox = styled.div`
@@ -79,6 +83,4 @@ export const ExplanationBox = styled.div`
   flex-direction: column;
 `;
 
-export const Explanation = styled.div`
-
-`
+export const Explanation = styled.div``;

@@ -6,9 +6,6 @@ import { color } from "../../../styles";
 const Header: FC = (): JSX.Element => {
   const router = useRouter();
 
-  useEffect(() => {
-    console.log(router.pathname)
-  }, []) 
   return (
     <S.SideBarContainer>
       <S.Introduction>
@@ -17,9 +14,27 @@ const Header: FC = (): JSX.Element => {
       </S.Introduction>
       <S.MenuTab>
         <S.MenuTabText>Menu Bar</S.MenuTabText>
-        <S.MenuLinks href="/recruitment" background={router.pathname === "/recruitment" ? `${color.blue200}` : `${color.blue200}`}>모집 의뢰서 관리</S.MenuLinks>
-        <S.MenuLinks href="/enterprise" background={router.pathname === "/enterprise" ? `${color.blue200}` : "inherit"}>기업 관리</S.MenuLinks>
-        <S.MenuLinks href="/employment" background={router.pathname === "/employment" ? `${color.blue200}` : "inherit"}>취업 관리</S.MenuLinks>
+        <S.MenuLinks
+          background={
+            router.pathname === "/recruitment" ? `${color.blue100}` : "inherit"
+          }
+        >
+          <S.Links href="/recruitment">모집 의뢰서 관리</S.Links>
+        </S.MenuLinks>
+        <S.MenuLinks
+          background={
+            router.pathname === "/enterprise" ? `${color.blue100}` : "inherit"
+          }
+        >
+          <S.Links href="/enterprise">기업 관리</S.Links>
+        </S.MenuLinks>
+        <S.MenuLinks
+          background={
+            router.pathname === "/employment" ? `${color.blue100}` : "inherit"
+          }
+        >
+          <S.Links href="/employment">취업 관리</S.Links>
+        </S.MenuLinks>
       </S.MenuTab>
       <S.Footer>
         <S.ByTeam>
