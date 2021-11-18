@@ -4,7 +4,7 @@ import * as M from "../styles";
 const ClassifyRecruit: FC = (): JSX.Element => {
   return (
     <M.Box>
-      <M.FilterName>모집 구분</M.FilterName>
+      <M.FilterName>모집구분</M.FilterName>
       <M.Selection>
         <M.Option>전체</M.Option>
       </M.Selection>

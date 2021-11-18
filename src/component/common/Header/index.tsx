@@ -1,7 +1,7 @@
 import { FC } from "react";
 import * as S from "./styles";
 import { useRouter } from "next/router";
-import * as Module from "../../modules";
+import * as Module from "../../select_modules";
 
 const Header: FC = (): JSX.Element => {
   const router = useRouter();
@@ -31,7 +31,7 @@ const Header: FC = (): JSX.Element => {
                 <>
                   <Module.RecruitYear />
                   <Module.EnterpriceName />
-                  <Module.ClassifyRecruit />
+                  <Module.Sortation />
                 </>
               ),
             }[router.pathname]

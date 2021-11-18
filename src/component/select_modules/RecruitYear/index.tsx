@@ -13,7 +13,7 @@ const RecruitYear: FC = (): JSX.Element => {
 
   return (
     <M.Box>
-      <M.FilterName>모집 년도</M.FilterName>
+      <M.FilterName>모집년도</M.FilterName>
       <M.Selection>
         {YearArr.map((v) => {
           return <M.Option key={v}>{v}</M.Option>;
