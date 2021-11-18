@@ -1,11 +1,6 @@
 import { FC } from "react";
-import * as S from "./styles"
-
-interface RegionProps {
-    
-}
  
-const Region: FC<RegionProps> = () => {
+const Region: FC = ():JSX.Element => {
     return ( 
         <div>Region</div>
      );

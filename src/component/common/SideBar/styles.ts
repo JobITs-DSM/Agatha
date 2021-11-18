@@ -6,10 +6,11 @@ export const SideBarContainer = styled.div`
   height: 100vh;
   background-color: ${color.gray500};
   width: 256px;
+  min-width: 220px;
   color: ${color.gray100};
   display: flex;
   flex-direction: column;
-  padding: 40px 5px;
+  padding: 40px 10px;
   position: relative;
 `;
 

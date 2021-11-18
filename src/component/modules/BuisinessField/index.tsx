@@ -1,11 +1,6 @@
 import { FC } from "react";
-import * as S from "./styles"
-
-interface BuisinessFieldProps {
-    
-}
  
-const BuisinessField: FC<BuisinessFieldProps> = () => {
+const BuisinessField: FC = ():JSX.Element => {
     return ( 
         <div>
             BuisinessField

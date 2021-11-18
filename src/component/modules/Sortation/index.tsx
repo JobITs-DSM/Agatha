@@ -1,11 +1,6 @@
 import { FC } from "react";
-import * as S from "./styles"
-
-interface Sortation {
-    
-}
  
-const Sortation: FC<Sortation> = () => {
+const Sortation: FC = ():JSX.Element => {
     return ( 
         <div>Sortation</div>
      );

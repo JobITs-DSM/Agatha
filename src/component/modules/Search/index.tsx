@@ -1,11 +1,6 @@
 import { FC } from "react";
-import * as S from "./styles"
-
-interface Search {
-    
-}
  
-const Search: FC<Search > = () => {
+const Search: FC = ():JSX.Element => {
     return ( 
         <div>Search</div>
      );

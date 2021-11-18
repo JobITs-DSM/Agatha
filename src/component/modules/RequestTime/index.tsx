@@ -1,11 +1,6 @@
 import { FC } from "react";
-import * as S from "./styles"
 
-interface RequestTime {
-    
-}
- 
-const RequestTime: FC<RequestTime> = () => {
+const RequestTime: FC = ():JSX.Element => {
     return ( 
         <div>Request Time</div>
      );

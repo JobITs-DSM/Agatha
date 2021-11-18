@@ -6,7 +6,8 @@ import * as Module from "../../modules";
 const Header: FC = (): JSX.Element => {
   const router = useRouter();
   return (
-    <S.HeaderContainer>
+    <S.Container>
+        <S.Header>
       <S.SelectorBox>
         {
           {
@@ -39,7 +40,8 @@ const Header: FC = (): JSX.Element => {
       <S.SearchBox>
           <Module.Search />
       </S.SearchBox>
-    </S.HeaderContainer>
+      </S.Header>
+    </S.Container>
   );
 };
 

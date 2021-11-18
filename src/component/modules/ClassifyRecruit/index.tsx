@@ -1,11 +1,6 @@
 import { FC } from 'react';
-import * as S from "./styles"
 
-interface Props {
-    
-}
- 
-const ClassifyRecruit : FC<Props> = () => {
+const ClassifyRecruit : FC = ():JSX.Element => {
     return (  
         <div>ClassifyRecruit</div>
     );
