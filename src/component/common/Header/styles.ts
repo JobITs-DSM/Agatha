@@ -5,6 +5,7 @@ export const Container = styled.div`
   background-color: ${color.gray700};
   height: 150px;
   width: 100%;
+  min-width: 1280px;
   border-bottom: 1px solid ${color.gray400};
   color: ${color.gray100};
   display: flex;

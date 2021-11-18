@@ -6,7 +6,7 @@ export const EnterpriseName = styled.input`
     border: 1px solid ${color.gray400};
     background-color: ${color.gray600};
     color: ${color.gray100};
-    width: 400px;
+    width: 90%;
     height: 35px;
     padding: 5px 15px;
     font-size: 15px;
