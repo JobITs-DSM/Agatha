@@ -3,16 +3,17 @@ import { color } from "../../../../styles";
 
 export const SearchBox = styled.div`
   display: flex;
-  width: 70px;
   justify-content: center;
+  width: 100%;
 `;
 
 export const Search = styled.div`
   display: inherit;
   background-color: ${color.blue100};
-  align-self: flex-end;
-  height: 35px;
+  align-self: center;
+  height: 30px;
   width: 75px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;

@@ -19,13 +19,15 @@ export const SelectorBox = styled.div`
 `;
 
 export const SearchBox = styled.div`
-  
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 `;
 
 export const Header = styled.div`
   height: 100%;
-  width: 65%;
-  display: grid;
-  grid-template-columns: 95% 5%;
-  padding: 20px 0 20px 60px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0 20px 65px;
 `;

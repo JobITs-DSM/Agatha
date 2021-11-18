@@ -5,8 +5,7 @@ import { color } from "../../../../styles";
 export const SideBarContainer = styled.div`
   height: 100vh;
   background-color: ${color.gray500};
-  width: 256px;
-  min-width: 220px;
+  min-width: 256px;
   color: ${color.gray100};
   display: flex;
   flex-direction: column;
@@ -49,7 +48,7 @@ export const MenuLinks = styled(Link)`
   cursor: pointer;
 `;
 
-export const Links = styled.a<{background : string}>`
+export const Links = styled.a<{ background: string }>`
   outline: none;
   text-decoration: none;
   font-size: 17px;

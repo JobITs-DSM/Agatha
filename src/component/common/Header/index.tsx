@@ -38,6 +38,7 @@ const Header: FC = (): JSX.Element => {
           }
         </S.SelectorBox>
         <S.SearchBox>
+          <span />
           <Module.Search />
         </S.SearchBox>
       </S.Header>
