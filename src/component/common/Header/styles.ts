@@ -26,5 +26,5 @@ export const Header = styled.div`
   width: 75%;
   display: flex;
   justify-content: space-between;
-  padding-left: 60px;
+  padding: 20px 0 20px 60px;
 `;
