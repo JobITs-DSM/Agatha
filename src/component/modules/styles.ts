@@ -5,7 +5,7 @@ export const Box = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 70%;
   place-items: center;
   justify-items: flex-start;
 `;
@@ -21,7 +21,7 @@ export const Selection = styled.select`
   border: 1px solid ${color.gray400};
   outline: none;
   width: 200px;
-  height: 35px;
+  height: 30px;
   font-size: 17px;
   padding: 5px;
 `;

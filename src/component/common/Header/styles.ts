@@ -24,8 +24,8 @@ export const SearchBox = styled.div`
 
 export const Header = styled.div`
   height: 100%;
-  width: 75%;
-  display: flex;
-  justify-content: space-between;
+  width: 65%;
+  display: grid;
+  grid-template-columns: 95% 5%;
   padding: 20px 0 20px 60px;
 `;

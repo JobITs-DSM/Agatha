@@ -42,17 +42,22 @@ export const MenuTabText = styled.div`
   color: ${color.gray300};
 `;
 
-export const MenuLinks = styled.div<{ background: string }>`
+export const MenuLinks = styled(Link)`
+  outline: none;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+`;
+
+export const Links = styled.a<{background : string}>`
+  outline: none;
+  text-decoration: none;
+  font-size: 17px;
   width: 100%;
   padding: 8px 6px;
   border-radius: 5px;
   background-color: ${(props) => props.background};
-`;
-
-export const Links = styled(Link)`
-  outline: none;
-  text-decoration: none;
-  font-size: 17px;
+  cursor: pointer;
 `;
 
 export const Footer = styled.div`

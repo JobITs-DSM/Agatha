@@ -7,7 +7,7 @@ export const EnterpriseName = styled.input`
     background-color: ${color.gray600};
     color: ${color.gray100};
     width: 90%;
-    height: 35px;
+    height: 30px;
     padding: 5px 15px;
     font-size: 15px;
 `

@@ -1,8 +1,7 @@
 import { FC } from "react";
-import * as S from "./styles";
 import { useRouter } from "next/router";
 import { color } from "../../../../styles";
-
+import * as S from "./styles";
 const SideBar: FC = (): JSX.Element => {
   const router = useRouter();
 
@@ -14,26 +13,34 @@ const SideBar: FC = (): JSX.Element => {
       </S.Introduction>
       <S.MenuTab>
         <S.MenuTabText>Menu Bar</S.MenuTabText>
-        <S.MenuLinks
-          background={
-            router.pathname === "/recruitment" ? `${color.blue100}` : "inherit"
-          }
-        >
-          <S.Links href="/recruitment">모집 의뢰서 관리</S.Links>
+        <S.MenuLinks href="/recruitment">
+          <S.Links
+            background={
+              router.pathname === "/recruitment"
+                ? `${color.blue100}`
+                : "inherit"
+            }
+          >
+            모집 의뢰서 관리
+          </S.Links>
         </S.MenuLinks>
-        <S.MenuLinks
-          background={
-            router.pathname === "/enterprise" ? `${color.blue100}` : "inherit"
-          }
-        >
-          <S.Links href="/enterprise">기업 관리</S.Links>
+        <S.MenuLinks href="/enterprise">
+          <S.Links
+            background={
+              router.pathname === "/enterprise" ? `${color.blue100}` : "inherit"
+            }
+          >
+            기업 관리
+          </S.Links>
         </S.MenuLinks>
-        <S.MenuLinks
-          background={
-            router.pathname === "/employment" ? `${color.blue100}` : "inherit"
-          }
-        >
-          <S.Links href="/employment">취업 관리</S.Links>
+        <S.MenuLinks href="/employment">
+          <S.Links
+            background={
+              router.pathname === "/employment" ? `${color.blue100}` : "inherit"
+            }
+          >
+            취업 관리
+          </S.Links>
         </S.MenuLinks>
       </S.MenuTab>
       <S.Footer>
