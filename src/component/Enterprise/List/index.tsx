@@ -2,6 +2,32 @@ import { FC } from "react";
 import * as S from "./styles";
 import { color } from "../../../../styles";
 
+export const ListHeader: FC = (): JSX.Element => {
+  const HeadArr = [
+    "기업명",
+    "지역",
+    "산업분야",
+    "근로자수",
+    "매출액",
+    "기업구분",
+    "협약",
+    "개발컨텍",
+    "최근의뢰",
+    "취업학생",
+    "후기",
+  ];
+  return (
+    <S.HeaderContainer>
+      <S.Checkbox>
+        <input type="checkbox" />
+      </S.Checkbox>
+      {HeadArr.map((value, index) => {
+        return <S.HeadText key={index}>{value}</S.HeadText>;
+      })}
+    </S.HeaderContainer>
+  );
+};
+
 export const ListBody: FC = (): JSX.Element => {
   return (
     <S.BodyContainer>
@@ -20,26 +46,5 @@ export const ListBody: FC = (): JSX.Element => {
       <S.GrayText>5명</S.GrayText>
       <S.WhiteUnderlined>5건</S.WhiteUnderlined>
     </S.BodyContainer>
-  );
-};
-
-export const ListHeader: FC = (): JSX.Element => {
-  return (
-    <S.HeaderContainer>
-      <S.Checkbox>
-        <input type="checkbox" />
-      </S.Checkbox>
-      <S.HeadText>기업명</S.HeadText>
-      <S.HeadText>지역</S.HeadText>
-      <S.HeadText>사업분야</S.HeadText>
-      <S.HeadText>근로자수</S.HeadText>
-      <S.HeadText>매출액</S.HeadText>
-      <S.HeadText>기업구분</S.HeadText>
-      <S.HeadText>협약</S.HeadText>
-      <S.HeadText>개발컨텍</S.HeadText>
-      <S.HeadText>최근의뢰</S.HeadText>
-      <S.HeadText>취업학생</S.HeadText>
-      <S.HeadText>후기</S.HeadText>
-    </S.HeaderContainer>
   );
 };
