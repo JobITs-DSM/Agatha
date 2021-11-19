@@ -82,7 +82,7 @@ export const Text = styled.div`
 export const Team = styled.div`
   font-size: 15px;
   color: ${color.gray200};
-  border-bottom: 1px solid ${color.gray200};
+  text-decoration: underline;
 `;
 
 export const ExplanationBox = styled.div`

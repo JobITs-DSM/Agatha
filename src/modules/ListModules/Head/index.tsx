@@ -2,7 +2,7 @@ import { FC } from "react";
 import styled from "@emotion/styled";
 import { color } from "../../../../styles/index";
 
-const ListHeaderStyle = styled.div`
+const HeadStyle = styled.div`
   height: 70px;
   width: 1200px;
   display: flex;
@@ -12,12 +12,12 @@ const ListHeaderStyle = styled.div`
   color: ${color.gray100};
 `;
 
-const ListHeader: FC = ({ children }): JSX.Element => {
+const Head: FC = ({ children }): JSX.Element => {
   return (
     <>
-      <ListHeaderStyle>{children}</ListHeaderStyle>
+      <HeadStyle>{children}</HeadStyle>
     </>
   );
 };
 
-export default ListHeader;
+export default Head;

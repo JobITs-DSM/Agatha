@@ -1,21 +1,27 @@
 import { FC } from "react";
-import {
-  ListContainer,
-  ListHeader,
-  SelectStatus,
-} from "../../modules/ListModules";
+import { Container, SelectStatus, Head, Body } from "../../modules/ListModules";
+import { ListHeader, ListBody } from "../../modules/ListModules/List";
 
 const Recruitment: FC = (): JSX.Element => {
   const StatusArr = ["접수", "모집전", "모집중"];
 
   return (
-    <ListContainer>
-      <ListHeader>
+    <Container>
+      <Head>
         {StatusArr.map((value, index) => {
           return <SelectStatus key={index}>{value}</SelectStatus>;
         })}
-      </ListHeader>
-    </ListContainer>
+      </Head>
+      <Body>
+        <ListHeader />
+        <ListBody />
+        <ListBody />
+        <ListBody />
+        <ListBody />
+        <ListBody />
+        <ListBody />
+      </Body>
+    </Container>
   );
 };
 
