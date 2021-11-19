@@ -29,34 +29,6 @@ export const HeadText = styled.div`
   color: ${color.gray200};
 `;
 
-export const Status = styled.div<{ color: string }>`
-  color: ${(props) => props.color};
-`;
-
-export const EnterpriseName = styled.div`
-  color: ${color.gray100};
-  text-decoration: underline;
-  cursor: pointer;
-`;
-
-export const RecruitionField = styled.div`
-  color: ${color.gray100};
-`;
-
-export const Recruits = styled.div`
-  color: ${color.gray200};
-`;
-
-export const grayText = styled.div`
-  color: ${color.gray300};
-`;
-
-export const Applicant = styled.div`
-  color: ${color.gray200};
-  text-decoration: underline;
-  cursor: pointer;
-`;
-
 export const Checkbox = styled.label`
   justify-content: space-between;
   align-items: center;
@@ -66,4 +38,32 @@ export const Checkbox = styled.label`
     height: 18px;
     cursor: pointer;
   }
+`;
+
+export const ColoredText = styled.div<{ color: string }>`
+  color: ${(props) => props.color};
+`;
+
+export const WhiteUnderlinedText = styled.div`
+  color: ${color.gray100};
+  text-decoration: underline;
+  cursor: pointer;
+`;
+
+export const GreyUnderlinedText = styled.div`
+  color: ${color.gray200};
+  text-decoration: underline;
+  cursor: pointer;
+`;
+
+export const WhiteText = styled.div`
+  color: ${color.gray100};
+`;
+
+export const LighterGray = styled.div`
+  color: ${color.gray200};
+`;
+
+export const GrayText = styled.div`
+  color: ${color.gray300};
 `;
