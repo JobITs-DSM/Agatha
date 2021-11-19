@@ -9,9 +9,9 @@ export const ContainerStyle = styled.div`
 export const Body = styled.div`
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 70vh;
   flex-direction: column;
-  padding: 20px 0 20px 60px;
+  padding-left: 60px;
 `;
 
 export const Box = styled.div`

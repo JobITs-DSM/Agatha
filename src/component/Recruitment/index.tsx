@@ -4,6 +4,10 @@ import { ListHeader, ListBody } from "./List";
 
 const Recruitment: FC = (): JSX.Element => {
   const StatusArr = ["접수", "모집전", "모집중"];
+  let TestArr = [];
+  for(let i = 0; i < 20; i++) {
+    TestArr.push(i);
+  }
 
   return (
     <M.ContainerStyle>
@@ -15,23 +19,11 @@ const Recruitment: FC = (): JSX.Element => {
       <M.Body>
         <ListHeader />
         <M.Box>
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
-          <ListBody />
+          {
+            TestArr.map((v) => {
+              return <ListBody key={v}/>
+            })
+          }
         </M.Box>
       </M.Body>
     </M.ContainerStyle>
