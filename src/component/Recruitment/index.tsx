@@ -1,18 +1,18 @@
 import { FC } from "react";
-import { Container, SelectStatus, Head, Body } from "../../modules/ListModules";
-import { ListHeader, ListBody } from "../../modules/ListModules/List";
+import * as M from "../Modules/ListModules/Styles/listStyles";
+import { ListHeader, ListBody } from "../Modules/ListModules/List";
 
 const Recruitment: FC = (): JSX.Element => {
   const StatusArr = ["접수", "모집전", "모집중"];
 
   return (
-    <Container>
-      <Head>
+    <M.ContainerStyle>
+      <M.HeadStyle>
         {StatusArr.map((value, index) => {
-          return <SelectStatus key={index}>{value}</SelectStatus>;
+          return <M.StatusStyle key={index}>{value}</M.StatusStyle>;
         })}
-      </Head>
-      <Body>
+      </M.HeadStyle>
+      <M.BodyStyle>
         <ListHeader />
         <ListBody />
         <ListBody />
@@ -20,8 +20,9 @@ const Recruitment: FC = (): JSX.Element => {
         <ListBody />
         <ListBody />
         <ListBody />
-      </Body>
-    </Container>
+        <ListBody />
+      </M.BodyStyle>
+    </M.ContainerStyle>
   );
 };
 

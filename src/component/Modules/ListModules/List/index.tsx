@@ -1,6 +1,6 @@
 import { FC } from "react";
-import * as S from "./styles";
-import { color } from "../../../../styles";
+import * as S from "../Styles/elementStyles";
+import { color } from "../../../../../styles";
 
 export const ListBody: FC = ():JSX.Element => {
     return (

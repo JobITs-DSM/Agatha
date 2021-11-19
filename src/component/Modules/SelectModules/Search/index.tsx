@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "@emotion/styled";
-import { color } from "../../../../styles";
+import { color } from "../../../../../styles";
 
 const SearchBoxStyle = styled.div`
   display: flex;
