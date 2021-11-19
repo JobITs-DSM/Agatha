@@ -1,7 +1,7 @@
 import { FC } from "react";
 import * as S from "./styles";
 import { useRouter } from "next/router";
-import * as Module from "../../select_modules";
+import * as Module from "../../../modules/SelectModules";
 
 const Header: FC = (): JSX.Element => {
   const router = useRouter();

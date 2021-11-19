@@ -1,13 +1,14 @@
+import { FC } from "react";
 import styled from "@emotion/styled";
 import { color } from "../../../../styles";
 
-export const SearchBox = styled.div`
+const SearchBoxStyle = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
 `;
 
-export const Search = styled.div`
+const SearchStyle = styled.div`
   display: inherit;
   background-color: ${color.blue100};
   align-self: center;
@@ -17,3 +18,13 @@ export const Search = styled.div`
   align-items: center;
   cursor: pointer;
 `;
+
+const Search: FC = (): JSX.Element => {
+  return (
+    <SearchBoxStyle>
+      <SearchStyle>검색</SearchStyle>
+    </SearchBoxStyle>
+  );
+};
+
+export default Search;
