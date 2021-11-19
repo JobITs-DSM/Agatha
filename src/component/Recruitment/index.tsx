@@ -1,27 +1,39 @@
 import { FC } from "react";
-import * as M from "../Modules/ListModules/Styles/listStyles";
-import { ListHeader, ListBody } from "../Modules/ListModules/List";
+import * as M from "../Modules/ListModules/styles";
+import { ListHeader, ListBody } from "./List";
 
 const Recruitment: FC = (): JSX.Element => {
   const StatusArr = ["접수", "모집전", "모집중"];
 
   return (
     <M.ContainerStyle>
-      <M.HeadStyle>
+      <M.Selector>
         {StatusArr.map((value, index) => {
-          return <M.StatusStyle key={index}>{value}</M.StatusStyle>;
+          return <M.Status key={index}>{value}</M.Status>;
         })}
-      </M.HeadStyle>
-      <M.BodyStyle>
+      </M.Selector>
+      <M.Body>
         <ListHeader />
-        <ListBody />
-        <ListBody />
-        <ListBody />
-        <ListBody />
-        <ListBody />
-        <ListBody />
-        <ListBody />
-      </M.BodyStyle>
+        <M.Box>
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+          <ListBody />
+        </M.Box>
+      </M.Body>
     </M.ContainerStyle>
   );
 };

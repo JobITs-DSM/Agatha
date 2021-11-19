@@ -1,21 +1,23 @@
 import { FC } from "react";
-import * as M from "../Modules/ListModules/Styles/listStyles";
-import { ListBody, ListHeader } from "../Modules/ListModules/List";
+import * as M from "../Modules/ListModules/styles";
+import { ListBody, ListHeader } from "../Recruitment/List";
 
 const Enterprise: FC = (): JSX.Element => {
   const StatusArr = ["선도기업 등록", "참여기업 등록", "협약 등록"];
 
   return (
     <M.ContainerStyle>
-      <M.HeadStyle>
+      <M.Selector>
         {StatusArr.map((value, index) => {
-          return <M.StatusStyle key={index}>{value}</M.StatusStyle>;
+          return <M.Status key={index}>{value}</M.Status>;
         })}
-      </M.HeadStyle>
-      <M.BodyStyle>
+      </M.Selector>
+      <M.Body>
         <ListHeader />
-        <ListBody />
-      </M.BodyStyle>
+        <M.Box>
+          <ListBody />
+        </M.Box>
+      </M.Body>
     </M.ContainerStyle>
   );
 };
