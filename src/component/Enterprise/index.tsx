@@ -10,7 +10,7 @@ const Enterprise: FC = (): JSX.Element => {
   }
 
   return (
-    <M.ContainerStyle>
+    <M.Container>
       <M.Selector>
         {StatusArr.map((value, index) => {
           return <M.Status key={index}>{value}</M.Status>;
@@ -24,7 +24,7 @@ const Enterprise: FC = (): JSX.Element => {
           })}
         </M.Box>
       </M.Body>
-    </M.ContainerStyle>
+    </M.Container>
   );
 };
 

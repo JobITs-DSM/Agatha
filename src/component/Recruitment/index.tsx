@@ -10,7 +10,7 @@ const Recruitment: FC = (): JSX.Element => {
   }
 
   return (
-    <M.ContainerStyle>
+    <M.Container>
       <M.Selector>
         {StatusArr.map((value, index) => {
           return <M.Status key={index}>{value}</M.Status>;
@@ -26,7 +26,7 @@ const Recruitment: FC = (): JSX.Element => {
           }
         </M.Box>
       </M.Body>
-    </M.ContainerStyle>
+    </M.Container>
   );
 };
 
