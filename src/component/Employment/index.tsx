@@ -8,10 +8,7 @@ const Employment: FC = (): JSX.Element => {
   return (
     <S.Container>
       <RecruitmentList />
-      <S.Box>
-        <Date />
-        <S.ChangeDate>일자 변경</S.ChangeDate>
-      </S.Box>
+      <Date />
       <StudentList />
     </S.Container>
   );

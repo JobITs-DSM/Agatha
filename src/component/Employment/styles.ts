@@ -5,22 +5,10 @@ export const Container = styled.div`
     width: 1200px;
     height: 100%;
     display: grid;
-    grid-template-columns: 40% 15% 45%;
+    grid-template-columns: minmax(340px, 35%) minmax(200px, 15%) minmax(500px, 50%); 
+    grid-column-gap: 50px;
+    padding: 70px 0px 0px 60px;
 `;
-
-export const ChangeDate = styled.div`
-    width: 100%;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: ${color.blue100};
-    color: ${color.gray100};
-    margin: 6px 0;
-    margin-top: 5px;
-    cursor: pointer;
-`;
-
 export const Box = styled.div`
     display: flex;
     flex-direction: column;

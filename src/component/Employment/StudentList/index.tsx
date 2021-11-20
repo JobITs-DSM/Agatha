@@ -1,9 +1,29 @@
 import { FC } from "react";
+import * as S from "./styles";
 
-const StudentList : FC = () : JSX.Element => {
-    return (
-        <div>hi</div>
-    )
-}
+import { ListHeader, ListBody } from "./List";
 
-export default StudentList;
+const RecruitmentList: FC = (): JSX.Element => {
+  const Arr = [];
+  for (let i = 0; i < 20; i++) {
+    Arr.push(i);
+  }
+
+  return (
+    <S.Container>
+      <S.HeadGrayText>모집 의뢰기업</S.HeadGrayText>
+      <S.Body>
+        <ListHeader />
+        <S.Box>
+          {
+            Arr.map((value) => {
+              return <ListBody key={value}/>
+            })
+          }
+        </S.Box>
+      </S.Body>
+    </S.Container>
+  );
+};
+
+export default RecruitmentList;
