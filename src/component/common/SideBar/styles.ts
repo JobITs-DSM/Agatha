@@ -3,7 +3,7 @@ import Link from "next/link";
 import { color } from "../../../../styles";
 
 export const SideBarContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   background-color: ${color.gray500};
   min-width: 256px;
   color: ${color.gray100};
