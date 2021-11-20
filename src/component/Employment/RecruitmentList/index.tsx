@@ -14,11 +14,9 @@ const RecruitmentList: FC = (): JSX.Element => {
       <S.Body>
         <ListHeader />
         <S.Box>
-          {
-            Arr.map((value) => {
-              return <ListBody key={value}/>
-            })
-          }
+          {Arr.map((value) => {
+            return <ListBody key={value} />;
+          })}
         </S.Box>
       </S.Body>
     </S.Container>

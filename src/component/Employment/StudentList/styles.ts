@@ -40,7 +40,7 @@ export const HeadGrayText = styled.div`
 `;
 
 export const WhiteText = styled.div`
-  color: ${color.gray100};  
+  color: ${color.gray100};
 `;
 
 export const GrayText = styled.div`
@@ -64,4 +64,15 @@ export const Checkbox = styled.label`
     height: 18px;
     cursor: pointer;
   }
+`;
+
+export const SwitchMode = styled.div`
+  height: 35px;
+  width: 100%;
+  background-color: ${color.blue100};
+  color: ${color.gray100};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 `;

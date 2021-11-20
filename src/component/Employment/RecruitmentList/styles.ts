@@ -41,7 +41,7 @@ export const HeadGrayText = styled.div`
 `;
 
 export const WhiteText = styled.div`
-  color: ${color.gray100};  
+  color: ${color.gray100};
 `;
 
 export const GrayText = styled.div`
