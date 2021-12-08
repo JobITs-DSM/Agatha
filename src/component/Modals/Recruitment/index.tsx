@@ -3,7 +3,7 @@ import * as S from "./styles";
 import { StudentList, FileList } from "./List";
 import FileInput from "../../Common/FileInput";
 import { getFileData } from "../../../../utils/function/getFile";
-import { RModal } from "../../../../recoil/atoms/Employment";
+import { RModal } from "../../../../recoil/atoms/Recruitment";
 import { useRecoilState } from "recoil";
 
 const RecruitModal: FC = (): JSX.Element => {
