@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { color } from "../../../../styles";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{isModal : boolean}>`
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: none; */
+  display: ${props => props.isModal ? "flex" : "none"};
 `;
 
 export const ModalContainer = styled.div`

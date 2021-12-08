@@ -1,15 +1,23 @@
 import { FC } from "react";
 import * as S from "./styles";
 import { color } from "../../../../styles";
+import { RModal } from "../../../../recoil/atoms/Employment";
+import { useSetRecoilState } from "recoil";
 
 export const ListBody: FC = (): JSX.Element => {
+  const setIsModal = useSetRecoilState(RModal);
+
+  const openModal = () => {
+    setIsModal(true);
+  }
+  
   return (
     <S.BodyContainer>
       <S.Checkbox>
         <input type="checkbox" />
       </S.Checkbox>
       <S.ColoredText color={color.red100}>접수 요청</S.ColoredText>
-      <S.WhiteUnderlinedText>세크라멘토 킹즈</S.WhiteUnderlinedText>
+      <S.WhiteUnderlinedText onClick={openModal}>세크라멘토 킹즈</S.WhiteUnderlinedText>
       <S.WhiteText>웹 프론트엔드</S.WhiteText>
       <S.GrayText>참여기업</S.GrayText>
       <S.LighterGray>1명</S.LighterGray>

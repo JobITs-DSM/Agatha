@@ -1,11 +1,14 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import * as S from "./styles";
 import { StudentList, FileList } from "./List";
 import FileInput from "../../Common/FileInput";
 import { getFileData } from "../../../../utils/function/getFile";
+import { RModal } from "../../../../recoil/atoms/Employment";
+import { useRecoilState } from "recoil";
 
 const RecruitModal: FC = (): JSX.Element => {
   const listHeaderArr = ["학번", "이름", "지원일자"];
+  const [isModal, setIsModal] = useRecoilState(RModal);
 
   const dummyData1 = [
     {
@@ -55,9 +58,27 @@ const RecruitModal: FC = (): JSX.Element => {
     });
   };
 
+  const closeModal = () => {
+    setIsModal(false);
+  };
+
+  useEffect(() => {
+    console.log(isModal);
+  }, []);
+
   return (
-    <S.Wrapper>
-      <S.ModalContainer>
+    <S.Wrapper
+      onClick={(e) => {
+        e.preventDefault();
+        closeModal();
+      }}
+      isModal={isModal}
+    >
+      <S.ModalContainer
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <div className="title">지원자 목록 조회</div>
         <S.ListBox>
           <S.ListHead>

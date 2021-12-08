@@ -1,6 +1,7 @@
 import { atom } from "recoil";
 
-const RecruitModal = atom({
-  default: "",
-  key: "recruit modal",
+export const RModal = atom({
+  default: false,
+  key: "recruit-modal",
 });
+
