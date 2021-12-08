@@ -3,6 +3,7 @@ import SideBar from "../Sidebar";
 import Header from "../Header";
 import * as S from "./styles";
 import MainContainer from "../MainContainer/MainContainer";
+import RecruitModal from "../../Modals/Recruitment";
 
 interface AppLayoutPage {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ interface AppLayoutPage {
 const Layout: FC = ({ children }: AppLayoutPage) => {
   return (
     <S.Container>
+      <RecruitModal />
       <SideBar />
       <MainContainer>
         <Header />

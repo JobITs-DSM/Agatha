@@ -19,7 +19,7 @@ const RecruitmentList: FC = (): JSX.Element => {
             return <ListBody key={value} />;
           })}
         </S.Box>
-        <S.SwitchMode>근로계약 전환</S.SwitchMode>
+        <S.SwitchMode value="근로계약 전환" type="button"/>
       </S.Body>
     </S.Container>
   );

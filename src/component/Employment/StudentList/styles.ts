@@ -66,7 +66,7 @@ export const Checkbox = styled.label`
   }
 `;
 
-export const SwitchMode = styled.div`
+export const SwitchMode = styled.input`
   height: 35px;
   width: 100%;
   background-color: ${color.blue100};
@@ -76,4 +76,7 @@ export const SwitchMode = styled.div`
   justify-content: center;
   cursor: pointer;
   margin-top: 15px;
+  outline: none;
+  border: none;
+  text-decoration: none;
 `;
