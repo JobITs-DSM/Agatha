@@ -7,14 +7,14 @@ interface Props {
   date: string;
 }
 
-const List: FC<Props> = ({ number, name, date }): JSX.Element => {
+const StudentList: FC<Props> = ({ number, name, date }): JSX.Element => {
   return (
-    <S.List>
+    <S.StudentList>
       <div className="number">{number}</div>
       <div className="name">{name}</div>
       <div className="date">{date}</div>
-    </S.List>
+    </S.StudentList>
   );
 };
 
-export default List;
+export default StudentList;
