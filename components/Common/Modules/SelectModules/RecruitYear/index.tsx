@@ -12,7 +12,7 @@ const RecruitYear: FC = (): JSX.Element => {
   }
 
   return (
-    <M.Box>
+    <M.Box width="100%">
       <M.FilterName>모집년도</M.FilterName>
       <M.Selection width={"200px"}>
         {YearArr.map((v) => {

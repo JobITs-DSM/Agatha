@@ -16,7 +16,7 @@ const EnterpriseInputStyle = styled.input`
 
 const EnterpriseName: FC = (): JSX.Element => {
   return (
-    <M.Box>
+    <M.Box width="100%">
       <M.FilterName>회사명</M.FilterName>
       <EnterpriseInputStyle type="text" placeholder={"회사명을 입력해주세요"} />
     </M.Box>

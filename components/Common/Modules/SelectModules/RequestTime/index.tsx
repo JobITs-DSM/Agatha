@@ -10,7 +10,7 @@ const SelectionBoxStyle = styled.div`
 
 const RequestTime: FC = (): JSX.Element => {
   return (
-    <M.Box>
+    <M.Box width="100%">
       <M.FilterName>의뢰일자</M.FilterName>
       <SelectionBoxStyle>
         <M.Selection width={"200px"}>
