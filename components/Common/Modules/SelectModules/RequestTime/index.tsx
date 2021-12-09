@@ -7,16 +7,17 @@ const SelectionBoxStyle = styled.div`
   display: flex;
   gap: 20px;
 `;
+
 const RequestTime: FC = (): JSX.Element => {
   return (
     <M.Box>
       <M.FilterName>의뢰일자</M.FilterName>
       <SelectionBoxStyle>
-        <M.Selection>
-          <M.Option>2021</M.Option>
+        <M.Selection width={"200px"}>
+          <option>2021</option>
         </M.Selection>
-        <M.Selection>
-          <M.Option>2021</M.Option>
+        <M.Selection width={"200px"}>
+          <option>2021</option>
         </M.Selection>
       </SelectionBoxStyle>
     </M.Box>

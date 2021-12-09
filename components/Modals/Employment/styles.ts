@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { color } from "../../../styles";
 
-export const Wrapper = styled.div<{ isModal: boolean }>`
+export const Wrapper = styled.div<{isModal : boolean}>`
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -9,7 +9,7 @@ export const Wrapper = styled.div<{ isModal: boolean }>`
   z-index: 1;
   align-items: center;
   justify-content: center;
-  display: ${(props) => (props.isModal ? "flex" : "none")};
+  display: ${props => props.isModal ? "flex" : "none"};
 `;
 
 export const ModalContainer = styled.div`
@@ -65,64 +65,25 @@ export const StudentList = styled.div`
   padding: 14px 35px;
   align-items: center;
 
-  & .number {
+  & .date {
     color: ${color.gray300};
   }
 
-  & .name {
+  & .type {
     color: ${color.gray100};
   }
 
-  & .date {
+  & .writer {
     color: ${color.gray200};
   }
 `;
 
-export const FileList = styled.div`
-  background-color: inherit;
-  border-bottom: 1px solid ${color.gray400};
-  height: 56px;
-  display: grid;
-  grid-template-columns: 32% 68%;
-  padding: 14px 35px;
-  align-items: center;
-
-  & .number {
-    color: ${color.gray300};
-  }
-
-  & .file {
-    color: ${color.gray200};
-  }
+export const ReviewContainer = styled.div`
+    margin-top: 37px;
 `;
 
-export const FileUploadWrapper = styled.div`
-  height: 104px;
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-`;
-
-export const FileUploadHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  width: 100%;
-  margin-bottom: 30px;
-  div {
+export const ReviewHeader = styled.div`
+    height: 35px;
     display: flex;
-  }
-
-  label {
-    color: ${color.gray200};
-    text-decoration: underline;
-    cursor: pointer;
-  }
-`;
-
-export const Alertion = styled.div`
-  color: ${color.red100};
-  margin-right: 6px;
+    justify-content: space-between;
 `;

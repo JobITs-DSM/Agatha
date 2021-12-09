@@ -5,52 +5,11 @@ import FileInput from "../../Common/FileInput";
 import { getFileData } from "../../../utils/function/getFile";
 import { RModal } from "../../../states/atoms/Recruitment";
 import { useRecoilState } from "recoil";
+import { dummyData1, dummyData2 } from "../../../exports/testData";
 
 const RecruitModal: FC = (): JSX.Element => {
   const listHeaderArr = ["학번", "이름", "지원일자"];
   const [isModal, setIsModal] = useRecoilState(RModal);
-
-  const dummyData1 = [
-    {
-      number: 2119,
-      name: "조준서",
-      date: "2021년 1월 31일",
-    },
-    {
-      number: 2118,
-      name: "정지우",
-      date: "2021년 1월 31일",
-    },
-    {
-      number: 2121,
-      name: "최아연",
-      date: "2021년 1월 31일",
-    },
-    {
-      number: 2119,
-      name: "조준서",
-      date: "2021년 1월 31일",
-    },
-  ];
-
-  const dummyData2 = [
-    {
-      file_name: "2119_조준서.hwp",
-      uuid: "1738-dfaf-1211-fasf",
-    },
-    {
-      file_name: "2119_조준서.hwp",
-      uuid: "1738-dfaf-1211-fasf",
-    },
-    {
-      file_name: "2119_조준서.hwp",
-      uuid: "1738-dfaf-1211-fasf",
-    },
-    {
-      file_name: "2119_조준서.hwp",
-      uuid: "1738-dfaf-1211-fasf",
-    },
-  ];
 
   const uploadFile = (event) => {
     getFileData(event).then((res) => {
@@ -108,7 +67,6 @@ const RecruitModal: FC = (): JSX.Element => {
             <label htmlFor={"file"}>첨부파일 등록</label>
             <FileInput onChange={uploadFile} id={"file"} />
           </S.FileUploadHeader>
-          <S.FileUploadBody>
             <S.ListBox>
               <S.ListHead>
                 <div>순번</div>
@@ -126,7 +84,6 @@ const RecruitModal: FC = (): JSX.Element => {
                 })}
               </S.ListBody>
             </S.ListBox>
-          </S.FileUploadBody>
         </S.FileUploadWrapper>
       </S.ModalContainer>
     </S.Wrapper>

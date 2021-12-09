@@ -14,9 +14,9 @@ const RecruitYear: FC = (): JSX.Element => {
   return (
     <M.Box>
       <M.FilterName>모집년도</M.FilterName>
-      <M.Selection>
+      <M.Selection width={"200px"}>
         {YearArr.map((v) => {
-          return <M.Option key={v}>{v}</M.Option>;
+          return <option key={v}>{v}</option>;
         })}
       </M.Selection>
     </M.Box>

@@ -15,15 +15,14 @@ export const FilterName = styled.label`
   color: ${color.gray200};
 `;
 
-export const Selection = styled.select`
+export const Selection = styled.select<{ width: string }>`
   background-color: ${color.gray600};
   color: ${color.gray100};
   border: 1px solid ${color.gray400};
   outline: none;
-  width: 200px;
+  width: ${props => props.width};
   height: 30px;
   font-size: 17px;
   padding: 5px;
 `;
 
-export const Option = styled.option``;
