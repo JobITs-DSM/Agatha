@@ -1,5 +1,5 @@
 import { FC } from "react";
-import _Enterprise from "../src/component/Enterprise";
+import _Enterprise from "../components/Enterprise";
 
 const Enterprice: FC = (): JSX.Element => {
   return (
