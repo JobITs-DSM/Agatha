@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { color } from "../../../../styles";
 
-export const Box = styled.div`
-  width: 100%;
+export const Box = styled.div<{width : string}>`
+  width: ${props => props.width};
   height: 100%;
   display: grid;
   grid-template-columns: 30% 70%;

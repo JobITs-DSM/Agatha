@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { color } from "../../../styles";
 
-export const Wrapper = styled.div<{isModal : boolean}>`
+export const Wrapper = styled.div<{ isModal: boolean }>`
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -9,7 +9,7 @@ export const Wrapper = styled.div<{isModal : boolean}>`
   z-index: 1;
   align-items: center;
   justify-content: center;
-  display: ${props => props.isModal ? "flex" : "none"};
+  display: ${(props) => (props.isModal ? "flex" : "none")};
 `;
 
 export const ModalContainer = styled.div`
@@ -79,11 +79,26 @@ export const StudentList = styled.div`
 `;
 
 export const ReviewContainer = styled.div`
-    margin-top: 37px;
+  margin-top: 37px;
 `;
 
 export const ReviewHeader = styled.div`
-    height: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+   
+  & .headerbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 40px;
+  }
+`;
+
+export const SaveButton = styled.input`
+  border: 1px solid ${color.gray100};
+  color: ${color.gray100};
+  padding: 5px 19px;
+  background-color: inherit;
+  cursor: pointer;
 `;
