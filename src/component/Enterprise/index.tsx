@@ -1,5 +1,5 @@
 import { FC } from "react";
-import * as M from "../Modules/ListModules/styles";
+import * as M from "../Common/Modules/ListModules/styles";
 import { ListBody, ListHeader } from "./List";
 
 const Enterprise: FC = (): JSX.Element => {

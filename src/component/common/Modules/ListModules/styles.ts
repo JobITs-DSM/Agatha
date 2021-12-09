@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { color } from "../../../../styles";
+import { color } from "../../../../../styles";
 
 export const Container = styled.div`
   width: 1200px;

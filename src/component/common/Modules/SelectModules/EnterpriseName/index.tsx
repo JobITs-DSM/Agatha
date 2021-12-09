@@ -1,7 +1,7 @@
 import { FC } from "react";
 import * as M from "../styles";
 import styled from "@emotion/styled";
-import { color } from "../../../../../styles";
+import { color } from "../../../../../../styles";
 
 const EnterpriseInputStyle = styled.input`
   outline: none;

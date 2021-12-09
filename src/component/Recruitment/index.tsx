@@ -1,5 +1,5 @@
 import { FC } from "react";
-import * as M from "../Modules/ListModules/styles";
+import * as M from "../Common/Modules/ListModules/styles";
 import { ListHeader, ListBody } from "./List";
 
 const Recruitment: FC = (): JSX.Element => {
