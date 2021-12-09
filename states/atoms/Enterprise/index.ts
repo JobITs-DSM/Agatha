@@ -1,11 +1,11 @@
 import { atom } from "recoil";
 
 export const EModal = atom({
-  key: "employment-modal",
-  default: true,
+  key: "enterprise-modal",
+  default: false,
 });
 
 export const ECheckBox = atom({
-  key: "employment-checkbox",
+  key: "enterprise-checkbox",
   default: false,
 });

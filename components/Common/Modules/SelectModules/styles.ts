@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { color } from "../../../../styles";
 
-export const Box = styled.div<{width : string}>`
-  width: ${props => props.width};
+export const Box = styled.div<{ width: string }>`
+  width: ${(props) => props.width};
   height: 100%;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -20,9 +20,12 @@ export const Selection = styled.select<{ width: string }>`
   color: ${color.gray100};
   border: 1px solid ${color.gray400};
   outline: none;
-  width: ${props => props.width};
+  width: ${(props) => props.width};
   height: 30px;
   font-size: 17px;
   padding: 5px;
-`;
 
+  & option {
+    font-size: 20px;
+  }
+`;

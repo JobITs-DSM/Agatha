@@ -80,18 +80,20 @@ export const StudentList = styled.div`
 
 export const ReviewContainer = styled.div`
   margin-top: 37px;
+  width: 100%;
 `;
 
 export const ReviewHeader = styled.div`
   height: 35px;
   display: flex;
   justify-content: space-between;
-   
+  font-size: 20px;
+
   & .headerbox {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    gap: 40px;
+    gap: 80px;
   }
 `;
 
@@ -101,4 +103,27 @@ export const SaveButton = styled.input`
   padding: 5px 19px;
   background-color: inherit;
   cursor: pointer;
+`;
+
+export const WriterInput = styled.input`
+  outline: none;
+  height: 30px;
+  width: 90px;
+  background-color: ${color.gray600};
+  border: 1px solid ${color.gray400};
+  color: ${color.gray100};
+  text-align: center;
+`;
+
+export const WriteReview = styled.textarea`
+  background-color: ${color.gray600};
+  border: 1px solid ${color.gray400};
+  color: ${color.gray100};
+  width: 100%;
+  height: 160px;
+  padding: 20px;
+  outline: none;
+  margin-top: 30px;
+  resize: none;
+  font-size: 16px;
 `;

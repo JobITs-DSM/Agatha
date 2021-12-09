@@ -1,34 +1,15 @@
 import { FC } from "react";
 import * as S from "./styles";
 import { color } from "../../../styles";
+import { EModal } from "../../../states/atoms/Enterprise/index";
+import { useSetRecoilState } from "recoil";
 
-export const ListHeader: FC = (): JSX.Element => {
-  const HeadArr = [
-    "기업명",
-    "지역",
-    "산업분야",
-    "근로자수",
-    "매출액",
-    "기업구분",
-    "협약",
-    "개발컨텍",
-    "최근의뢰",
-    "취업학생",
-    "후기",
-  ];
-  return (
-    <S.HeaderContainer>
-      <S.Checkbox>
-        <input type="checkbox" />
-      </S.Checkbox>
-      {HeadArr.map((value, index) => {
-        return <S.HeadText key={index}>{value}</S.HeadText>;
-      })}
-    </S.HeaderContainer>
-  );
-};
+const ListBody: FC = (): JSX.Element => {
+  const setIsModal = useSetRecoilState(EModal);
+  const openModal = () => {
+    setIsModal(true);
+  };
 
-export const ListBody: FC = (): JSX.Element => {
   return (
     <S.BodyContainer>
       <S.Checkbox>
@@ -44,7 +25,9 @@ export const ListBody: FC = (): JSX.Element => {
       <S.LightGrayText>N</S.LightGrayText>
       <S.GrayText>2020년</S.GrayText>
       <S.GrayText>5명</S.GrayText>
-      <S.WhiteUnderlined>5건</S.WhiteUnderlined>
+      <S.WhiteUnderlined onClick={openModal}>5건</S.WhiteUnderlined>
     </S.BodyContainer>
   );
 };
+
+export default ListBody;

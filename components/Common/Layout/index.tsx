@@ -4,7 +4,7 @@ import Header from "../Header";
 import * as S from "./styles";
 import MainContainer from "../MainContainer/MainContainer";
 import RecruitModal from "../../Modals/Recruitment";
-import EmploymentModal from '../../Modals/Employment/index';
+import EmploymentModal from '../../Modals/Enterprise/index';
 
 interface AppLayoutPage {
   children: React.ReactNode;
