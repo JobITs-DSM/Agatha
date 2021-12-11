@@ -7,6 +7,7 @@ export const Container = styled.div`
     grid-template-columns: minmax(360px, 35%) minmax(180px, 15%) minmax(500px, 50%); 
     grid-column-gap: 50px;
     padding: 70px 0px 0px 60px;
+    background: inherit;
 `;
 export const Box = styled.div`
     display: flex;
