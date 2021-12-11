@@ -30,12 +30,12 @@ export const ListHeader: FC = (): JSX.Element => {
     <S.HeaderContainer>
       <S.Checkbox>
         <input type="checkbox" ref={checkBoxRef} onChange={changeCheckBox}/>
-      </S.Checkbox>
+      </S.Checkbox> 
       {HeadArr.map((value, index) => {
         return <S.HeadText key={index}>{value}</S.HeadText>;
       })}
     </S.HeaderContainer>
-  );
+  );    
 };
 
 export default ListHeader;
