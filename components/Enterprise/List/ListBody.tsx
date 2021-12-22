@@ -1,18 +1,26 @@
 import { FC, useEffect, useRef } from "react";
 import * as S from "./styles";
 import { color } from "../../../styles";
-import { EnterpriseModal, EnterpriseCheckBox } from "../../../states/atoms/Enterprise/index";
-import { useSetRecoilState, useRecoilValue } from "recoil";
+import {
+  EnterpriseModal,
+  EnterpriseCheckBox,
+} from "../../../states/atoms/Enterprise/index";
+import { useSetRecoilState, useRecoilState } from "recoil";
 
 const ListBody: FC = (): JSX.Element => {
   const setIsModal = useSetRecoilState(EnterpriseModal);
   const checkBoxRef = useRef<HTMLInputElement>();
-  const checkBoxState = useRecoilValue(EnterpriseCheckBox);
+  const [checkBoxState, setCheckBoxState] = useRecoilState(EnterpriseCheckBox);
 
   const openModal = () => {
     setIsModal(true);
   };
 
+  useEffect(() => {
+    return () => {
+      setCheckBoxState(false);
+    };
+  }, []);
 
   useEffect(() => {
     checkBoxState
@@ -23,7 +31,7 @@ const ListBody: FC = (): JSX.Element => {
   return (
     <S.BodyContainer>
       <S.Checkbox>
-        <input type="checkbox" ref={checkBoxRef}/>
+        <input type="checkbox" ref={checkBoxRef} />
       </S.Checkbox>
       <S.WhiteText>세트라멘토 킹즈</S.WhiteText>
       <S.GrayText>대전</S.GrayText>
