@@ -1,7 +1,7 @@
 import { FC, useRef } from "react";
 import * as S from "./styles";
 import { color } from "../../../styles";
-import { ECheckBox } from "../../../states/atoms/Enterprise";
+import { EnterpriseCheckBox } from "../../../states/atoms/Enterprise";
 import { useSetRecoilState } from "recoil";
 
 const HeadArr = [
@@ -20,7 +20,7 @@ const HeadArr = [
 
 export const ListHeader: FC = (): JSX.Element => {
   const checkBoxRef = useRef<HTMLInputElement | null>(null);
-  const setCheckBox = useSetRecoilState(ECheckBox);
+  const setCheckBox = useSetRecoilState(EnterpriseCheckBox);
 
   const changeCheckBox = () => {
     setCheckBox(checkBoxRef.current.checked);

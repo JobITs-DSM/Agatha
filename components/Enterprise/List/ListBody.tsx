@@ -1,13 +1,13 @@
 import { FC, useEffect, useRef } from "react";
 import * as S from "./styles";
 import { color } from "../../../styles";
-import { EModal, ECheckBox } from "../../../states/atoms/Enterprise/index";
+import { EnterpriseModal, EnterpriseCheckBox } from "../../../states/atoms/Enterprise/index";
 import { useSetRecoilState, useRecoilValue } from "recoil";
 
 const ListBody: FC = (): JSX.Element => {
-  const setIsModal = useSetRecoilState(EModal);
+  const setIsModal = useSetRecoilState(EnterpriseModal);
   const checkBoxRef = useRef<HTMLInputElement>();
-  const checkBoxState = useRecoilValue(ECheckBox);
+  const checkBoxState = useRecoilValue(EnterpriseCheckBox);
 
   const openModal = () => {
     setIsModal(true);

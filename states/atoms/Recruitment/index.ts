@@ -1,11 +1,11 @@
 import { atom } from "recoil";
 
-export const RModal = atom({
+export const RecruitmentModal = atom({
   default: false,
   key: "recruit-modal",
 });
 
-export const RCheckBox = atom({
+export const RecruitmentCheckBox = atom({
   default: false,
   key: "recruit-checkbox"
 })

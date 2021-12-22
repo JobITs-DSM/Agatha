@@ -1,13 +1,13 @@
 import { FC, useRef, useEffect } from "react";
 import * as S from "./styles";
 import { color } from "../../../styles";
-import { RModal, RCheckBox } from "../../../states/atoms/Recruitment";
+import { RecruitmentModal, RecruitmentCheckBox } from "../../../states/atoms/Recruitment";
 import { useSetRecoilState, useRecoilValue } from "recoil";
 
 const ListBody: FC = (): JSX.Element => {
-  const setIsModal = useSetRecoilState(RModal);
+  const setIsModal = useSetRecoilState(RecruitmentModal);
   const checkBoxRef = useRef<HTMLInputElement>();
-  const checkBoxState = useRecoilValue(RCheckBox);
+  const checkBoxState = useRecoilValue(RecruitmentCheckBox);
 
   useEffect(() => {
     checkBoxState

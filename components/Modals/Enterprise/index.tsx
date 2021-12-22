@@ -2,13 +2,13 @@ import { FC, useEffect } from "react";
 import * as S from "./styles";
 import * as M from "../../Common/Modules/SelectModules/styles";
 import List from "./List";
-import { EModal } from "../../../states/atoms/Enterprise";
+import { EnterpriseModal } from "../../../states/atoms/Enterprise";
 import { useRecoilState } from "recoil";
 import { dummyData3 } from "../../../exports/testData";
 
 const EmploymentModal: FC = (): JSX.Element => {
   const listHeaderArr = ["실습년도", "구분", "작성자"];
-  const [isModal, setIsModal] = useRecoilState(EModal);
+  const [isModal, setIsModal] = useRecoilState(EnterpriseModal);
 
   const closeModal = () => {
     setIsModal(false);

@@ -1,12 +1,12 @@
 import { FC, useRef, useEffect } from "react";
 import * as S from "./styles";
 import { color } from "../../../styles";
-import { RCheckBox } from "../../../states/atoms/Recruitment";
+import { RecruitmentCheckBox } from "../../../states/atoms/Recruitment";
 import { useSetRecoilState } from "recoil";
 
 const ListHeader: FC = (): JSX.Element => {
   const checkBoxRef = useRef<HTMLInputElement | null>(null);
-  const setCheckBox = useSetRecoilState(RCheckBox);
+  const setCheckBox = useSetRecoilState(RecruitmentCheckBox);
 
   const changeCheckBox = () => {
     setCheckBox(checkBoxRef.current.checked);
