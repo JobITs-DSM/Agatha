@@ -13,6 +13,7 @@ export const Wrapper = styled.div<{ isModal: boolean }>`
 `;
 
 export const ModalContainer = styled.div`
+  min-width: 600px;
   width: 725px;
   height: 565px;
   background-color: ${color.gray500};
@@ -53,7 +54,7 @@ export const ListHead = styled.div`
 
 export const ListBody = styled.div`
   height: 112px;
-  overflow: scroll;
+  overflow: auto;
 `;
 
 export const StudentList = styled.div`

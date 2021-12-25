@@ -53,7 +53,7 @@ export const ListHead = styled.div`
 
 export const ListBody = styled.div`
   height: 112px;
-  overflow: scroll;
+  overflow: auto;
 `;
 
 export const StudentList = styled.div`
