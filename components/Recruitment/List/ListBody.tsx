@@ -38,7 +38,7 @@ const ListBody: FC = (): JSX.Element => {
       <S.WhiteText>웹 프론트엔드</S.WhiteText>
       <S.GrayText>참여기업</S.GrayText>
       <S.LighterGray>1명</S.LighterGray>
-      <S.GreyUnderlinedText>2명</S.GreyUnderlinedText>
+      <S.GreyUnderlinedText onClick={openModal}>2명</S.GreyUnderlinedText>
       <S.GrayText>2020년 10월 20일</S.GrayText>
       <S.GrayText>2020년 10월 20일</S.GrayText>
     </S.BodyContainer>
