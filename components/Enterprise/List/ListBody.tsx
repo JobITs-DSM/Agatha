@@ -8,8 +8,8 @@ import {
 import { useSetRecoilState, useRecoilState } from "recoil";
 
 const ListBody: FC = (): JSX.Element => {
-  const setIsModal = useSetRecoilState(EnterpriseModal);
   const checkBoxRef = useRef<HTMLInputElement>();
+  const setIsModal = useSetRecoilState(EnterpriseModal);
   const [checkBoxState, setCheckBoxState] = useRecoilState(EnterpriseCheckBox);
 
   const openModal = () => {
@@ -23,9 +23,7 @@ const ListBody: FC = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    checkBoxState
-      ? (checkBoxRef.current.checked = true)
-      : (checkBoxRef.current.checked = false);
+    checkBoxRef.current.checked = checkBoxState;
   }, [checkBoxState]);
 
   return (

@@ -19,9 +19,7 @@ const ListBody: FC = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    checkBoxState
-      ? (checkBoxRef.current.checked = true)
-      : (checkBoxRef.current.checked = false);
+    checkBoxRef.current.checked = checkBoxState;
   }, [checkBoxState]);
 
   const openModal = () => {
