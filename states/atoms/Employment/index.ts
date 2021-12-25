@@ -1,11 +1,16 @@
 import { atom } from "recoil";
 
-const EmploymentModal = atom({
+export const EmploymentModal = atom({
   key: "employment-modal",
   default: false,
 });
 
-const EmploymentModalChecked = atom({
+export const EmploymentChecked = atom({
   key: "employment-checkbox",
+  default: false,
+});
+
+export const Mode = atom({
+  key: "employment-mode",
   default: false,
 });
