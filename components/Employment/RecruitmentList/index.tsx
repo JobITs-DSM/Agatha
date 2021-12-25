@@ -10,7 +10,7 @@ const RecruitmentList: FC = (): JSX.Element => {
 
   return (
     <S.Container>
-      <S.HeadGrayText>모집 의뢰기업</S.HeadGrayText>
+      <S.HeadGrayText>모집 의뢰 기업</S.HeadGrayText>
       <S.Body>
         <ListHeader />
         <S.Box>
